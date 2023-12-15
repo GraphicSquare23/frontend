@@ -1,0 +1,62 @@
+.detailContainer {
+  padding: 2rem;
+}
+.detailContainer .title {
+  margin-top: 4rem;
+  color: #ff5574;
+}
+
+.detailContainer .row {
+  margin-top: 2rem;
+}
+
+.detailContainer .card-title {
+  color: #ff5574;
+  border-bottom: 2px solid #ff5574;
+  padding-bottom: 1rem;
+}
+.detailContainer .card-title .heading {
+  color: #ff5574;
+}
+
+.detailContainer .card-title .price {
+  color: #ff5574;
+}
+
+.detailContainer .cards-1 {
+  padding-top: 2rem;
+  background: #fcf9fa;
+}
+
+.detailContainer .cards-1 .card-body {
+  padding-left: 1rem;
+}
+
+.detailContainer .card-1 .card {
+  background: #fcf9fa;
+}
+
+.detailContainer .subtitle {
+  margin-top: 2rem;
+}
+
+.detailContainer .quoteSection {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 16px 16px 42px 42px rgba(110, 110, 110, 0.2);
+}
+
+@media (min-width: 992px) {
+  .detailContainer .card {
+    transition: all 0.5s ease-in-out;
+    min-height: 220px;
+  }
+
+  .detailContainer .card:hover {
+    transform: scale(1.03);
+    box-shadow: none;
+    border: 3px solid #ff5574;
+  }
+}

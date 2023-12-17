@@ -9,7 +9,7 @@ function ContactUS() {
         event.preventDefault();
         // API endpoint URL
         const apiUrl = 'https://graphic-square-23.onrender.com/contact';
-    
+        // const apiUrl="http://localhost:8080/contact"
         // Fetch options
         const requestOptions = {
           method: 'POST',
@@ -79,7 +79,7 @@ function ContactUS() {
                             <input type="number" className="form-control-input" placeholder="Whatapp Number" required onChange={e=>handleChange(e.target.value,'whatapp')} value={contactData.whatapp || ""}/>
                         </div>
                         <div className="form-group">
-                            <input type="text" className="form-control-input" placeholder="City" required onChange={e=>handleChange(e.target.value,'city')} value={contactData.whatapp || ""}/>
+                            <input type="text" className="form-control-input" placeholder="City" required onChange={e=>handleChange(e.target.value,'city')} value={contactData.city || ""}/>
                         </div>
                         <div className="form-group" onChange={e=>handleChange(e.target.value,'project_type')} value={contactData.project_type || ""}>
                             <select className="form-control-select" required>
